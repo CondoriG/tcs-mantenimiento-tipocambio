@@ -130,7 +130,7 @@ class Tabla extends Component {
                                     venta: props.original.venta
                                 }
 
-                                axios.post("https://tipo-cambio.herokuapp.com/insertarTipoCambio", data)
+                                axios.post("https://tcs-tipocambio.herokuapp.com/insertarTipoCambio", data)
                                     .then(data => {
                                         console.log("llego xd");
                                         Swal.fire("Good job!", "You clicked the button!", "success").then(function () {
